@@ -1,7 +1,7 @@
 #include "test.h"
 void test(int like, int day, string expected, string test_name) {
 	string actual = calculate_likes(like, day);
-	string msg = test_name + "-->";
+	string msg = test_name + "--> ";
 	msg += actual==expected ? "Pass" : "Fail";
 	cout << msg << endl;
 }

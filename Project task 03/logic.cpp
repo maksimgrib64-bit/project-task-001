@@ -5,11 +5,13 @@ bool is_power_of_two(int number) {
 		return false;
 	}
 
+	while (number % 2 == 0) {
+		number /= 2;
+	}
 
 
 
 
 
-
-	return true;
+	return number==1;
 }
